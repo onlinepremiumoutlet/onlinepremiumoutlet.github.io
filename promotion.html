@@ -7,59 +7,52 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>The Aditii Website Template | Sale :: w3layouts</title>
+<title>OPO | Online Premium Outlet</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery.min.js"></script>
-	<!-- start gallery_sale -->
-	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-	<script type="text/javascript">
-	$(function () {
 
-		var filterList = {
-
-			init: function () {
-
-				// MixItUp plugin
+<!-- start gallery_sale -->
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var filterList = {
+            init: function () {
+                // MixItUp plugin
 				// http://mixitup.io
 				$('#portfoliolist').mixitup({
-					targetSelector: '.portfolio',
+                    targetSelector: '.portfolio',
 					filterSelector: '.filter',
 					effects: ['fade'],
 					easing: 'snap',
 					// call the hover effect
 					onMixEnd: filterList.hoverEffect()
 				});
-
 			},
 
 			hoverEffect: function () {
-
-				// Simple parallax effect
+                // Simple parallax effect
 				$('#portfoliolist .portfolio').hover(
-					function () {
+                    function () {
 						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+						//$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
 					},
 					function () {
 						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+						//$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
 					}
-				);
-
-			}
-
+                );
+            }
 		};
 
 		// Run the show!
 		filterList.init();
+    });
+</script>
 
-
-	});
-	</script>
 <!-- start top_js_button -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -73,76 +66,76 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 </head>
 <body>
+
 <!-- start header -->
 <div class="header_bg">
 <div class="wrap">
-	<div class="header">
+    <div class="header">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/> </a>
+			<a href="index.html"><img src="images/opo_logo.png" alt=""/> </a>
 		</div>
+<!-- #TODO: Removing shopping cart for now
 		<div class="h_icon">
 		<ul class="icon1 sub-icon1">
 			<li><a class="active-icon c1" href="#"><i>$300</i></a>
 				<ul class="sub-icon1 list">
 					<li><h3>shopping cart empty</h3><a href=""></a></li>
-					<li><p>if items in your wishlit are missing, <a href="contact.html">contact us</a> to view them</p></li>
 				</ul>
 			</li>
 		</ul>
 		</div>
+-->
+<!-- #TODO: Removing search box for now
 		<div class="h_search">
     		<form>
     			<input type="text" value="">
     			<input type="submit" value="">
     		</form>
 		</div>
+-->
 		<div class="clear"></div>
 	</div>
 </div>
 </div>
+
 <div class="header_btm">
 <div class="wrap">
 	<div class="header_sub">
-		<div class="h_menu">
+        <div class="h_menu">
 			<ul>
-				<li><a href="index.html">Home</a></li> |
-				<li class="active"><a href="sale.html">sale</a></li> |
-				<li><a href="handbags.html">handbags</a></li> |
-				<li><a href="accessories.html">accessories</a></li> |
-				<li><a href="wallets.html">wallets</a></li> |
-				<li><a href="sale.html">sale</a></li> |
-				<li><a href="index.html">mens store</a></li> |
-				<li><a href="shoes.html">shoes</a></li> |
-				<li><a href="sale.html">vintage</a></li> |
-				<li><a href="service.html">services</a></li> |
-				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="index.html">home</a></li>
+                <li class="active"><a href="promotion.html">sales</a></li>
+				<li><a href="men.html">men</a></li>
+                <li><a href="women.html">women</a></li>
+				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</div>
-		<div class="top-nav">
-	          <nav class="nav">
-	    	    <a href="#" id="w3-menu-trigger"> </a>
-	                  <ul class="nav-list" style="">
-	            	        <li class="nav-item"><a class="active" href="index.html">Home</a></li>
-							<li class="nav-item"><a href="sale.html">Sale</a></li>
-							<li class="nav-item"><a href="handbags.html">Handbags</a></li>
-							<li class="nav-item"><a href="accessories.html">Accessories</a></li>
-							<li class="nav-item"><a href="shoes.html">Shoes</a></li>
-							<li class="nav-item"><a href="service.html">Services</a></li>
-							<li class="nav-item"><a href="contact.html">Contact</a></li>
-	                 </ul>
-	           </nav>
-	             <div class="search_box">
-				<form>
-				   <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-			    </form>
-			</div>
-	          <div class="clear"> </div>
-	          <script src="js/responsive.menu.js"></script>
-         </div>
-	<div class="clear"></div>
+        <div class="top-nav">
+            <nav class="nav">
+                <a href="#" id="w3-menu-trigger"> </a>
+                <ul class="nav-list" style="">
+                    <li class="nav-item"><a href="index.html">home</a></li>
+					<li class="nav-item"><a class="active" href="promotion.html">promotion</a></li>
+					<li class="nav-item"><a href="men.html">men</a></li>
+					<li class="nav-item"><a href="women.html">women</a></li>
+					<li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+<!-- #TODO: Removing searh box for now
+            <div class="search_box">
+                <form>
+                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+                </form>
+            </div>
+-->
+            <div class="clear"> </div>
+            <script src="js/responsive.menu.js"></script>
+        </div>
+        <div class="clear"></div>
+    </div>
 </div>
 </div>
-</div>
+
 <!-- start main -->
 <div class="main_bg">
 <div class="wrap">
