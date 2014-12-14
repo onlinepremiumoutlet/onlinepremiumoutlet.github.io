@@ -248,10 +248,10 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 .h_menu ul li a:hover{
-	color:#f0f0f0;
+	color:#484848;
 }
 .h_menu ul li.active a{
-	color:#f0f0f0;
+	color:#484848;
 }
 /* start icon styles */
 .h_icon{
@@ -1490,12 +1490,6 @@ p.para{
 	.product-essential {
 		padding: 5px;
 	}
-    .h_menu {
-		display: none;
-	}
-    .top-nav {
-		display: block;
-	}
 }
 @media only screen and (max-width: 320px) {
 	.wrap{
@@ -1512,5 +1506,11 @@ p.para{
 	}
 	.tabs {
 		margin: 10px auto;
+	}
+    .h_menu {
+		display: none;
+	}
+    .top-nav {
+		display: block;
 	}
 }
