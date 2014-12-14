@@ -1348,15 +1348,15 @@ p.para{
 	.h_icon {
 		width: 18.777%;
 	}
-	.h_menu {
+/*	.h_menu {
 		display: none;
-	}
+	} */
 	.header_sub {
 		padding: 1% 2%;
 	}
-	.top-nav {
+/*	.top-nav {
 		display: block;
-	}
+	}*/
 	.ser-main {
 		float: none;
 		width: 100%;
@@ -1489,6 +1489,12 @@ p.para{
 	}
 	.product-essential {
 		padding: 5px;
+	}
+    .h_menu {
+		display: none;
+	}
+    .top-nav {
+		display: block;
 	}
 }
 @media only screen and (max-width: 320px) {
